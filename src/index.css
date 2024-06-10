@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.title {
+    @apply text-[1.75rem] md:text-[3.125rem] leading-[1.1] font-semibold tracking-wide text-white;
+  }
+
+  .subtitle {
+    @apply text-[1.125rem] md:text-[1.625rem] leading-[1.1] font-light text-white;
+  }
+  
+  .red-button{
+    @apply bg-[#e50914]  py-[1px] px-[5px] md:py-[6px] md:px-[26px] flex md:items-stretch rounded-sm text-base 
+    md:text-[1.625rem]  font-light text-white md:m-0 mx-auto;
+  }
+
+
+  .gray-border{
+    @apply border-t-[8px] border-[#222];
+  }
+
+  .list-item-icon {
+    @apply w-4 h-4 text-white transform fill-current md:h-6 md:w-6;
+  }
+  .list-item-title{
+    @apply text-[1.625rem] tracking-wide text-white mb-2;
+  }
+  
+  .list-item{
+    @apply flex justify-between w-full bg-[#303030] md:py-5 py-1 px-8 items-center rounded-md hover:bg-gray-600;
+  }
+
+  .footer-item{
+    @apply pb-[14px] ;
+  }
